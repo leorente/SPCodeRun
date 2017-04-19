@@ -1,10 +1,11 @@
-﻿using SPCodeRun.Csom;
-using System;
+﻿namespace SPCodeRun.Cmd {
 
-namespace SPCodeRun.Cmd {
-    class Program {
+    using SPCodeRun.Csom;
+    using System;
+
+    public class Program {
         static void Main(string[] args) {
-            GetListItemsFromSiteListsCSOM("https://leonardorente.sharepoint.com/sites/MySite", "leonardo.rente@company.onmicrosoft.com.br", "*****");
+            GetListItemsFromSiteListsCSOM("https://leonardorente.sharepoint.com/sites/MySite", "leonardo.rente@leonardorente.onmicrosoft.com.br", "*****");
 
             Console.ReadKey();
         }
