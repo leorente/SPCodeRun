@@ -135,8 +135,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context.cs" />
-    <Compile Include="IContext.cs" />
+    <Compile Include="Common\Serialization.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="RestContext.cs" />
+    <Compile Include="CsomContext.cs" />
+    <Compile Include="Abstraction\IContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

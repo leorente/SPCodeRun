@@ -1,13 +1,10 @@
 ﻿using Microsoft.SharePoint.Client;
 using System;
-namespace SPCodeRun.SharePointContext {
-
+namespace SPCodeRun.SharePointContext.Abstraction {
     /// <summary>
     /// SharePoint Context
     /// </summary>
     interface IContext {
-
-
         /// <remarks>
         /// Details about the interface go here.
         /// </remarks>
@@ -16,13 +13,6 @@ namespace SPCodeRun.SharePointContext {
         /// </summary>
         /// <returns>Site list collection</returns>
         ListCollection GetLists();
-
-        /// <summary>
-        /// Get list by list title
-        /// </summary>
-        /// <param name="listTitle"></param>
-        /// <returns>list object</returns>
-        List GetList(string listTitle);
 
         /// <summary>
         /// Get all items from list
